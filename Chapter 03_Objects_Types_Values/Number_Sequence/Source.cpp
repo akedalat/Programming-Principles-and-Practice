@@ -3,17 +3,17 @@
 
 int main() {
 
-	std::string val1, val2, val3; //initialise variabales 
+	double val1, val2, val3; //initialise variabales 
 
-	std::cout << "Please enter 3 integer values to be suquenced by me\n"; //ask to enter numbers
+	std::cout << "Please enter 3 values to be suquenced by me\n"; //ask to enter numbers
 
 	while (std::cin >> val1 >> val2 >> val3) {
 
 		std::cout << "Numbres entered are: " << val1 << ", " << val2 << ", " << val3 << std::endl;
 
-		std::string smallest;
-		std::string middle;
-		std::string largest;
+		double smallest;
+		double middle;
+		double largest;
 
 		if (val1 <= val2 && val1 <= val3) {
 			smallest = val1;
