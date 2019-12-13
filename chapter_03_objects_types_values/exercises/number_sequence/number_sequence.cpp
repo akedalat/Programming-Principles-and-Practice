@@ -5,15 +5,13 @@ int main() {
 
 	double val1, val2, val3; //initialise variabales 
 
-	std::cout << "Please enter 3 values to be suquenced by me\n"; //ask to enter numbers
+	std::cout << "Please enter 3 values to be sequenced by me\n"; //ask to enter numbers
 
 	while (std::cin >> val1 >> val2 >> val3) {
 
 		std::cout << "Numbres entered are: " << val1 << ", " << val2 << ", " << val3 << std::endl;
 
-		double smallest;
-		double middle;
-		double largest;
+		double smallest, middle, largest;
 
 		if (val1 <= val2 && val1 <= val3) {
 			smallest = val1;
@@ -27,7 +25,6 @@ int main() {
 				largest = val2;
 			}
 
-
 		}
 		else if (val2 <= val1 && val2 <= val3) {
 			smallest = val2;
@@ -40,8 +37,6 @@ int main() {
 				middle = val3;
 				largest = val1;
 			}
-
-
 		}
 		else {
 			smallest = val3;
@@ -54,13 +49,8 @@ int main() {
 				middle = val2;
 				largest = val1;
 			}
-
-
 		}
-
 		std::cout << "Sequence: " << smallest << ", " << middle << ", " << largest << std::endl;
 	}
-
-
 	return 0;
 }

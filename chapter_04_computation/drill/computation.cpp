@@ -19,11 +19,9 @@ int main() {
 std::cout << "Enter a value followed by a unit (cm, m, in, ft)" << std::endl; //prompt to enter 1 number and a unit
 	
 	//read input and convert to meter
-	
 	while (std::cin>> val >> unit) { 
-		
 		++count;
-		
+
 		if (unit == "cm" || unit == " cm" || unit == "centimeter") {
 			val = val / cm_per_m;
 		}
@@ -40,15 +38,10 @@ std::cout << "Enter a value followed by a unit (cm, m, in, ft)" << std::endl; //
 		}
 	
 		//define smallest and largest values
-	
 		if (val < smallest){ 
-
-			smallest = val; 
-	
+			smallest = val;
 	}
-	
 		else if (val > largest) { 
-
 			largest = val;
 	}
 	sum += val; //calculate sum
@@ -62,7 +55,7 @@ std::cout << "Enter a value followed by a unit (cm, m, in, ft)" << std::endl; //
 	for (int i = 0; i < values.size(); i++) {
 		std::cout << values[i] << " ";
 	}
-		std::cout<< std::endl << smallest <<"m the smallet so far" << std::endl;
+		std::cout<< std::endl << smallest <<"m the smallest so far" << std::endl;
 		std::cout<< largest <<"m the largest so far" << std::endl;
 		std::cout << sum << " sum of values" << std::endl;
 		std::cout << count << " number of values entered" << std::endl;

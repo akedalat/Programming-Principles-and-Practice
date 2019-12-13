@@ -1,10 +1,8 @@
-
-#include "std_lib_facilities.h"
-
+#include "../../include/std_lib_facilities.h"
 
 int main()  {       // C++ programs start by executing the function main
 	
-	std::cout	<< "Hello, programming!\n"   // output “Hello, World!”
+	std::cout	<< "Hello, programming!\n"   // output ï¿½Hello, World!ï¿½
 				<< "here we go!\n"; 
 		keep_window_open();           // wait for a character to be entered
 
