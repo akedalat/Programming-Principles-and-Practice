@@ -6,19 +6,13 @@ int main (){
 
 int val {0};
 
-	while (std::cin>> val) {
-
-		
-
+	while (std::cin>> val) {	
 		if (val % 2 == 0) {
-
 		std::cout<< "The value " << val << " is an even number" << std::endl;
 		}
 		else {  
-
 		std::cout<< "The value " << val << " is an odd number" << std::endl;
 		}
-		
 }
 	return 0;
 }

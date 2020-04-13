@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <float.h>
-#include<vector>
+#include <vector>
 #include <algorithm>
 
 int main() {
